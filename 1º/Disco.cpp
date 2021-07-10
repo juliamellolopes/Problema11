@@ -97,6 +97,7 @@ void Disco::tokenizarProcessos(const char *fileNamePages, bool b){
 						strcpy(p.page,tk);
 			    		aux = false;
 			    		cout << " " <<p.page;
+			    		
 			    		sp.pages.push_back(p);
 					}else{
 						p.name = (char*)malloc(strlen(tk)+1);

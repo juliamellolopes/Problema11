@@ -11,12 +11,12 @@ using namespace std;
 class Swap {
 	private:
 		int id;
-		vector<Processo>processos;
+		vector<Processo> processos;
 	public:
 		Swap();
 		
 		void setId(int id);
-		void setPages(Processo p);
+		void setProcessos(Processo p);
 		
 		int getId();
 		void imprimeProcessos();

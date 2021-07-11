@@ -1,9 +1,7 @@
 #ifndef SWAP_H
 #define SWAP_H
-
 #include <iostream>
 #include <vector>
-
 #include "Processo.hpp"
 
 using namespace std;

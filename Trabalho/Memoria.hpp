@@ -1,9 +1,7 @@
 #ifndef MEMORIA_H
 #define MEMORIA_H
-
 #include <iostream>
 #include <vector>
-
 #include "Processo.hpp"
 #include "Disco.hpp"
 

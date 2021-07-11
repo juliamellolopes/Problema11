@@ -19,12 +19,10 @@ void Memoria::setProcessos(Processo p, int aux){
 		contP3 = (aux == 3) ? contP3 += 1 : contP3;
 		contP4 = (aux == 4) ? contP4 += 1 : contP4;
 	}
-	
 	contA1 = (p.getId() == 1) ? contA1 += 1 : contA1;
 	contA2 = (p.getId() == 2) ? contA2 += 1 : contA2;
 	contA3 = (p.getId() == 3) ? contA3 += 1 : contA3;
 	contA4 = (p.getId() == 4) ? contA4 += 1 : contA4;
-	
 	this->processos.push_back(p);
 }
 

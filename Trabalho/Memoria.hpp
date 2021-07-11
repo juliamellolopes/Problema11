@@ -22,28 +22,22 @@ static int contA4 = 0;
 class Memoria {
 	private:
 		int id;
-		vector<Processo> processos;
+		vector<Processo>processos;
 	public:
 		Memoria();
-		
 		void setId(int id);
 		void setProcessos(Processo p, int aux);
-		
 		int getId();
-		vector<Processo> getProcessos();
-		
+		vector<Processo>getProcessos();
 		void imprimeMemoria();
 		int buscarPage(int id, int page);
 		void liberarPrimeiroValor(Processo *p);
 		int tamProcessos();
-		
 		void liberarMemoria(Disco *d);
-		
 		int getContP1();
 		int getContP2();
 		int getContP3();
 		int getContP4();
-		
 		int getContA1();
 		int getContA2();
 		int getContA3();

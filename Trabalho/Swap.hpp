@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Swap {
+class Swap{
 	private:
 		int id;
 		vector<Processo>processos;
@@ -15,7 +15,7 @@ class Swap {
 		void setId(int id);
 		void setProcessos(Processo p);
 		int getId();
-		vector<Processo> getProcessos();
+		vector<Processo>getProcessos();
 		void imprimeProcessos();
 };
 #endif

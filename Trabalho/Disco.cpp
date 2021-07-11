@@ -13,6 +13,7 @@ int Disco::getId(){
 }
 
 void Disco::imprimePages(){
+	
 	for(int i=0; i < pages.size(); i++){
 		cout << " " << pages[i].getPage();
 	}
@@ -28,6 +29,7 @@ void Disco::setId(int id){
 
 int Disco::buscarPage(int page){
 	int aux;
+	
 	for(int i=0; i < pages.size(); i++){
 		if(page == i+1){
 			aux = pages[i].getPage();
@@ -39,6 +41,7 @@ int Disco::buscarPage(int page){
 }
 
 void Disco::retornaParaDisco(int id, int page, int valor){
+	
 	for(int i=0; i < this->pages.size(); i++){
 		if(getId() == id){
 			if(i+1 == page){

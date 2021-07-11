@@ -42,6 +42,7 @@ int Memoria::buscarPage(int id, int page){
 }
 
 void Memoria::imprimeMemoria(){
+	
 	for(int i=0; i < processos.size(); i++){
 		cout << " <" << processos[i].getId() << "-" << processos[i].getPage() << " : " << processos[i].getValor() << ">\t";
 	}

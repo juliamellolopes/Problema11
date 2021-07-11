@@ -112,30 +112,6 @@ void carregaMemoria(Disco *d, Memoria *m, Memoria *m2, Swap *s, int aux){
 	}
 }
 
-int procurarNaMemoria(Memoria *m, int id, int pagina){
-	int p;
-	
-	for(int i = 0; i < 4; i++){
-		p = m[i].buscarPage(id, pagina);
-		if(p != -1) 
-			return p;
-	}
-	return -1;
-}
-
-int procurarNoDisco(Disco *d, int id, int pagina){
-	int p;
-	
-	for(int i = 0; i < 4; i++){
-		if(id == d[i].getId()){
-			p = d[i].buscarPage(pagina);
-			if(p != -1)
-				return p;
-		}
-	}
-	return -1;
-}
-
 void openFile(char *fileNamePages, Disco *d, Swap *s, bool aux){
 	FILE *pfile = fopen(fileNamePages,"r");
 	char *result;
@@ -191,3 +167,28 @@ int tokenizar(char *strfile, int *t){
 	}
 	return cont;	
 }
+
+int procurarNaMemoria(Memoria *m, int id, int pagina){
+	int p;
+	
+	for(int i = 0; i < 4; i++){
+		p = m[i].buscarPage(id, pagina);
+		if(p != -1) 
+			return p;
+	}
+	return -1;
+}
+
+int procurarNoDisco(Disco *d, int id, int pagina){
+	int p;
+	
+	for(int i = 0; i < 4; i++){
+		if(id == d[i].getId()){
+			p = d[i].buscarPage(pagina);
+			if(p != -1)
+				return p;
+		}
+	}
+	return -1;
+}
+

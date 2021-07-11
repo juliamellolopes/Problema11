@@ -1,13 +1,13 @@
 #include "Page.hpp"
 
-Page::Page() {
+Page::Page(){
 	this->page = 0;
 }
 		
-void Page::setPage(int page) {
+void Page::setPage(int page){
 	this->page = page;
 }
 
-int Page::getPage() {
+int Page::getPage(){
 	return this->page;
 }

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Disco {
+class Disco{
 	private:
 		int id;
 		vector<Page>pages;

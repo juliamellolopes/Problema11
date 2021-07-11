@@ -23,6 +23,7 @@ class Disco {
 		void imprimePages();
 		
 		int buscarPage(int page);
+		void retornaParaDisco(int id, int page, int valor);
 		
 		void setPages(Page p);
 		void setId(int id);

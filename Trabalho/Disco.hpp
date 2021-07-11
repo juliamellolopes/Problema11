@@ -1,12 +1,9 @@
 #ifndef DISCO_H
 #define DISCO_H
-
 #include <vector>
 #include <iostream>
 #include <string>
-
 #include "Page.hpp"
-#include "Token.hpp"
 
 using namespace std;
 

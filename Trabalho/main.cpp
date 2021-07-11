@@ -2,12 +2,10 @@
 #include "Page.hpp"
 #include "Swap.hpp"
 #include "Memoria.hpp"
-
 #include <string.h>
 #include <string>
-#include<stdio.h>
-#include<stdlib.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 #define MAX 1024
 #define N 10
 
@@ -18,16 +16,13 @@ int procurarNoDisco(Disco *d, int id, int pagina);
 void carregaMemoria(Disco *d, Memoria *m, Memoria *m2, Swap *s, int aux);
 void retornarParaDisco(Disco *d, int id, int page);
 
-int main(int argc, char** argv) {
+int main(){
 	Page p1, p2, p3;
-	
 	Disco d[N];
 	Swap s[N];
 	Memoria m[N];
-	
 	char disco[] = "arquivos_exemplo.txt";
 	char processo[] = "processos_exemplo.txt";
-	
 	openFile(disco, d, s, true);
 	cout << endl;
 	openFile(processo, d, s, false);

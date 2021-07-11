@@ -1,30 +1,30 @@
 #include "Processo.hpp"
 
-Processo::Processo() {
+Processo::Processo(){
 	setId(0);
 	setPage(0);
 	setValor(-1);
 }
 		
-void Processo::setId(int id) {
+void Processo::setId(int id){
 	this->id = id;
 }
 
-void Processo::setPage(int page) {
+void Processo::setPage(int page){
 	this->page = page;	
 }
 
-void Processo::setValor(int valor) {
+void Processo::setValor(int valor){
 	this->valor = valor;	
 }
 
-int Processo::getId() {
+int Processo::getId(){
 	return this->id;
 }
 
-int Processo::getPage() {
+int Processo::getPage(){
 	return this->page;
 }
-int Processo::getValor() {
+int Processo::getValor(){
 	return this->valor;
 }

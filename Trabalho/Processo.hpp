@@ -5,19 +5,16 @@
 
 using namespace std;
 
-class Processo {
+class Processo{
 	private:
 		int id;
 		int page;
 		int valor;
-		
 	public:
 		Processo();
-		
 		void setId(int id);
 		void setPage(int page);
 		void setValor(int valor);
-		
 		int getId();
 		int getPage();
 		int getValor();

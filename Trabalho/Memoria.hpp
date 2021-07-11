@@ -11,7 +11,6 @@ static int contP1 = 0;
 static int contP2 = 0;
 static int contP3 = 0;
 static int contP4 = 0;
-
 static int contA1 = 0;
 static int contA2 = 0;
 static int contA3 = 0;
